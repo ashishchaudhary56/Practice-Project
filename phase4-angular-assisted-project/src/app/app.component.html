@@ -1,0 +1,36 @@
+<!-- main app container -->
+<!--Jumbotran -->
+<div class="container">
+
+    <div class="mt-4 p-4 bg-primary text-white rounded">
+        <h1 class="text-center">Welcome to ECommerce</h1>
+        <p highlight >Great products are great prices.</p>
+    </div>
+    
+    <p highlight>{{'Hello' | uppercase}}</p>
+    <p>pi (.5-5): {{3.1454646 | number:'.5-5'}}</p>
+    
+    <h2>Pipe Example</h2>
+    <h4>1. Today is {{today}}</h4>
+    <h4>2. Today is {{today | date}}</h4>
+    <h4>3. Today is {{today | date:"dd/MM/yyyy"}}</h4>
+    
+    <h4>{{myProduct|json}} </h4>
+    
+    <br>
+    <add-product></add-product>
+    
+    <br><br>
+    <add-product-using-reactive-form />
+    
+    <br><br>
+    <product productNumber="2"></product>
+    <product productNumber="2" message="Hi Child!" (helloChange)="parentFunc1($event)" ></product>
+    <br>
+    No of Product Views:{{noOfProductViews}}
+    
+    <product-list></product-list>
+    
+    
+    
+    </div>

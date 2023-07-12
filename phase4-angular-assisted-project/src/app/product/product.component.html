@@ -1,0 +1,28 @@
+<div style="border: 2px solid red">
+
+    <p>Product Details</p>
+    <img [src]="product.imgSrc" width="150px" height="120px" >
+    
+    <div [style.color]="product.isSpecial ? 'red': 'green'">This product is Special</div>
+    
+    <div [class.inStock]="product.inStock">This product is in Stock</div>
+    
+    <ul>    
+        <li>{{ product.name }} </li>
+        <li>{{ product.price }} </li>    
+    </ul>
+    
+    <br><br>
+    <button name="b1" class="btn btn-primary " (click)="addLike($event)" > Like! </button><br><br>
+    <button name="b2" class="btn btn-primary " (click)="addLike($event)" > Rate 5 Stars </button>
+    
+    <br><br>
+    Add your Comments : <input type="text"  (input)="addComments(comment.value)" #comment> 
+    
+    <br><br>
+    Any suggestions for renaming the product?  : <input type="text" [(ngModel)]="product.name"> 
+    
+    <br><br><button (click)="f1()">Speak to the Parent</button>
+    
+    </div>
+    
