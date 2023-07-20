@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="18.288">
+  <properties />
+  
+  
+            <testcase name="googleAccount" time="3.025" classname="com.ecommerce.test.FBRegistration" />
+                <testcase name="googleAccount" time="2.926" classname="com.ecommerce.test.FBRegistration" />
+                <testcase name="f1" time="0.003" classname="com.ecommerce.test.FBRegistration" />
+                <testcase name="searchGoogleAndTestTitleText" time="3.179" classname="com.ecommerce.test.FBRegistration" />
+                <testcase name="testLocalPage" time="5.300" classname="com.ecommerce.test.FBRegistration" />
+                <testcase name="fbAccount" time="3.855" classname="com.ecommerce.test.FBRegistration" />
+      
+</testsuite>
